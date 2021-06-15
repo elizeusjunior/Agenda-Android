@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="text_valor1">AGENDA</string>
+    <string name="text_valor">Voltar</string>
+    <string name="text_valor2">Nome</string>
+    <string name="text_valor3">PESQUISA</string>
+    <string name="text_valor4">Endereço</string>
+    <string name="text_valor5">Telefone</string>
+    <string name="btn_valor1">CADASTRAR</string>
+    <string name="btn_valor2">PESQUISAR</string>
+    <string name="btn_valor3">MOSTRAR</string>
+    <string name="btn_valor4">VOLTAR</string>
+</resources>
