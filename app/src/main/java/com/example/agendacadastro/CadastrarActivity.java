@@ -33,7 +33,7 @@ private Button btnCadastrar, btnVoltar;
     }
 
     public void onCadastrar(View view){
-            if (!editTextNome.getText().toString().isEmpty() && editTextEndereco.toString().isEmpty() && editTextTelefone.toString().isEmpty()) {
+            if (!editTextNome.getText().toString().isEmpty() && !editTextEndereco.toString().isEmpty() && !editTextTelefone.toString().isEmpty()) {
                 Contatos contatos = new Contatos(editTextNome.getText().toString(), editTextEndereco.getText().toString(), editTextTelefone.getText().toString());
                 Intent intent = new Intent();
                 intent.putExtra("contatos", contatos);

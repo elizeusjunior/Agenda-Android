@@ -14,11 +14,13 @@ public class Contatos implements Serializable{
     }
     //geters
     public String getNome() {
+
         return nome;
     }
 
     //metodos
     public String mostrarDados(){
-        return "Nome: " + nome + "\nEndereo: " + endereco + "\nTelefone: " + telefone;
+        return "\nNome: " + nome + "\nEndereo: " + endereco + "\nTelefone: " + telefone;
     }
+
 }

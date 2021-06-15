@@ -70,8 +70,18 @@ private List<Contatos> lista = new ArrayList<>(); //matriz dinâmica
             }
         }
     }
+    //Em toda matriz (lista), em cada linha guardamos o objeto contato
     public void onPesquisar(View view){
-
+        boolean achou = false;
+        textViewResultado.setText("");
+        for (Contatos contatos:lista) {
+            if (editTextNome.getText().toString().equals(contatos.getNome())){
+                textViewResultado.setText(contatos.mostrarDados());
+                achou = true;
+            }
+        }
+        editTextNome.setText("");
+        if (!achou) Toast.makeText(this, "Preencha o campo nome!", Toast.LENGTH_SHORT).show();
     }
 
 }
